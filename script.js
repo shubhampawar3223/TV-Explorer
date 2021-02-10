@@ -10,7 +10,7 @@ search.addEventListener("click",(e)=>{
 let element1;
 async function searchApi(val){
        try{
-        let searchResult = await fetch("http://api.tvmaze.com/search/shows?q="+ val)
+        let searchResult = await fetch("https://api.tvmaze.com/search/shows?q="+ val)
         let data = await searchResult.json();
         element.innerHTML="";
         for(let i=0;i< data.length;i++){
